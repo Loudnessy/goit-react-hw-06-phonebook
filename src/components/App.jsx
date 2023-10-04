@@ -1,14 +1,11 @@
 import React from "react";
-import { nanoid } from "nanoid";
 import { ContactForm } from "./ContactForm/ContactForm";
 import { Filter } from "./Filter/Filter";
 import { ContactList } from "./ContactList/ContactList";
 import { StyledDiv } from "App.styled";
-import { useState } from "react";
-import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { submit } from "./ContactForm/submit";
-import { addContact, addLocalStorageContacts, deleteContact } from "redux/slices/contactsSlice";
+import { deleteContact } from "redux/slices/contactsSlice";
 import { changeFilter } from "redux/slices/filterSlice";
 import { useSelector } from "react-redux";
 export const App = () => {
